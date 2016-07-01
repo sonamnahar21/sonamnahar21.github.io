@@ -17,10 +17,9 @@ and open the template in the editor.
         <style>
             .carousel-inner > .item > img,
             .carousel-inner > .item > a > img {
-                width: 30%;
+                width:100%;
                 margin: auto;
             }
-           
         </style>
     </head>
     <body>
@@ -43,6 +42,7 @@ and open the template in the editor.
                                     <li><a href="index.html">Join Network Story</a></li>
                                     <li><a href="index.html">Team</a></li>
                                     <li><a href="index.html">Contacts</a></li>
+                                    <li><a href="index.html"><img src="img/login.png" width="30px"></a></li>
   				</ul>
   			</div>
   		</div><!-- End Container-->
@@ -56,12 +56,13 @@ and open the template in the editor.
                     </div>
             </div><!-- End container -->
   	</div>
-        <div class="container">
+        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
             <section>
-  		<div class="row">
-                    <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                       <div class="container-fluid">
                         <br>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 400px; margin: 0 auto">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -118,12 +119,33 @@ and open the template in the editor.
                           </a>
                         </div>
                     </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                            <div class="panel panel-default text-center">
+                                    <div class="panel-body">
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            <h4>Grid2</h4>
+                                            <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                            <div class="panel panel-default text-center">
+                                    <div class="panel-body">
+                                            <span class="glyphicon glyphicon-play-circle"></span>
+                                            <h4>Grid3</h4>
+                                            <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
+                                    </div>
+                            </div>
+                    </div>
   		</div><!-- end row -->
                 <div class="row">
                     <div class="col-sm-4">
-                       <div class="panel panel-default text-center">
+                            <div class="panel panel-default text-center">
                                     <div class="panel-body">
-                                            <span class="glyphicon glyphicon-star"></span>
+                                            <span class="glyphicon glyphicon-ok"></span>
                                             <h4>Grid4</h4>
                                             <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
                                     </div>
@@ -181,7 +203,7 @@ and open the template in the editor.
                             </div>
                     </div>
   		</div><!-- end row -->
-<div class="row">
+                 <div class="row">
                     <div class="col-sm-4">
                             <div class="panel panel-default text-center">
                                     <div class="panel-body">

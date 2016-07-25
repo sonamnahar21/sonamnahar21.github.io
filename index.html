@@ -29,36 +29,90 @@
       }
   
     .navbar li { color: #000 }
-      #headerDiv
-      {
-    
+    #headerDiv
+    {
       margin: 0;
-      padding-top: 50px;
+      padding-top: 270px;
+      padding-left: 800px;
       width: 100%;
       height:auto;
-      }
+    }
+    .btn-transparent {
+    background: transparent;
+    color: #F2F2F2;
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border: 1px solid black;
+    border-top-left-radius:2em; 
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em; 
+    border-bottom-right-radius:2em;
+}
       .carousel-inner{
       width:100%;
       }
       
-      .multi_bg_example {
+      .divHeader {
   
     height: 750px;
     background-image: url(images/headercone.png), url(images/headerconeleftbottom.png),url(images/headerconerightbottom.png),url(images/headerconerightside.png),url(images/NavBack.png),url(images/funnel.png),url(images/header.png) ;
     background-repeat: no-repeat;
     background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
-    -webkit-background-size: auto,auto,auto,auto,auto,auto,cover;
+  /*  -webkit-background-size: auto,auto,auto,auto,auto,auto,cover;
     -moz-background-size:auto,auto,auto,auto,auto,auto,cover;
-    -o-background-size: auto,auto,auto,auto,auto,auto,cover;
+    -o-background-size: auto,auto,auto,auto,auto,auto,cover;*/
     background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
     /*1830px 50px*/
 }
+h1
+{
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+margin: 0 0 0px 0;
+}
+h3{
+    margin: 0 0 0px 0;
+}
+.secondRow
+{
+    height: auto;
+    background-image: url(images/2rowbackground.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+}
+.divfooter
+{
+    height: auto;
+    background-image: url(images/footerbg.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+    color: white;
+    text-align: left
+}
+.divfooter a
+{ 
+    color: white;
+    font-size:smaller;
+}
 
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color:black;
+}
     </style>
    
   </head>
   <body>
-      <div class="multi_bg_example">
+    <div class="divHeader">
+        <h2> <span style="color: white;margin-top: 0;margin-left: 20px">Network</br><span style="margin-left: 20px"> Story</span></h2>
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" id="my-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -68,164 +122,93 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a href="" class="navbar-brand">Network Story Logo</a>
+        
         </div>
         <!-- Navbar Header-->
         <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav" style="float: right">
+          <ul class="nav navbar-nav" style="float: right;" id="menu">
             <li><a href="index.html">How Network Story Works</a></li>
             <li><a href="index.html">Startup Stories</a></li>
             <li><a href="index.html">Join Network Story</a></li>
             <li><a href="index.html">Team</a></li>
             <li><a href="index.html">Contacts</a></li>
-            <li><a class="btn btn-launch" href="javascript:;" data-toggle="modal" data-target="#loginModal"><img src="img/login.png" style="width: 30px;height: 30px"> </a></li>
           </ul>
         </div>
       </div>
       <!-- End Container-->
     </nav>
     <div class="container text-center row" id='headerDiv'>
-      <h1>header1</h1>
-      <h3>header1</h3>
+      <h1>WE HELP YOU TO MOVE</h1>
+      <h1>FROM ZERO TO ONE</h1>
+      <h2>Without Reinventing The Wheel</h2>
+      </br>
+      <h3>Powered by <span style="font-weight: bold"> Intelliber</span> for Entrepreneurs</h3>
       <div class="btn-group">
-        <a href="" class="btn btn-lg btn-default"> Join its free</a>
+          <a href="" class="btn  btn-transparent" style="color: black"> Apply its free</a>
       </div>
     </div>
           </div>
     <!-- End container --> 
-    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+    <div class="container-fluid span12" style="padding-left: 0px;padding-right: 0px">
       <section>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Grid1</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
+        <div class="row secondRow">
+            <div style="padding-top: 265px;padding-left: 420px;padding-bottom: 250px; color: white">  
+                <h4>If your looking for information about Network Story, they have a new home</h4>
+                <a style="padding-left: 250px;color: white;cursor: pointer" href="#"><img src="images/2rowicon.png"> Click here
+                </a>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Grid2</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <h4>Grid3</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <!-- end row -->
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-ok"></span>
-                <h4>Grid4</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Grid5</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <h4>Grid6</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
+      </section>
         </div>
-        <!-- end row -->
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-ok"></span>
-                <h4>Grid7</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Grid8</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <h4>Grid9</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
+    <!-- end row -->
+    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+      <section>
+          <div class="row" style="height: 200px;">
+              <span style="padding-left: 100px">Row 3 to be done</span>
         </div>
-        <!-- end row -->
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-ok"></span>
-                <h4>Grid10</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Grid11</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-play-circle"></span>
-                <h4>Grid12</h4>
-                <p>Intelliber INC develops future products for the consumer and enterprise networking domain in addition to analytic solutions for its own enterprise, content and social networking platforms. </p>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-        <!-- end row -->
+    <!-- end row -->
+    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <section>
+            <div>
+                <img src="images/row4.png" style="width: 100%"  >
+          </div>
       </section>
     </div>
-      
+    <!-- end row -->
+    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;border-style: solid;">
+      <section>
+          <div class="row" style="height: 200px;">
+              <span style="padding-left: 100px"> Row 5 to be done </span>
+        </div>
+          </section>
+        </div>
+    <!-- end row -->
+     <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <section>
+            <div>
+                <img src="images/row6.png" style="width: 100%"  >
+          </div>
+      </section>
+    </div>
+    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <section>
+            <div>
+                <img src="images/row7.png" style="width: 100%"  >
+          </div>
+      </section>
+    </div>
     <!-- End Container -->
     <!-- Footer -->
-    <footer  style="background-color: #ccffcc" >
-      <hr>
-      <div class="container text-center" >
-        <div>180 Sansome Street, San Francisco, CA 94104; +1-857-600-9779</div>
-        <div>Copyright Network Story</div>
-        <div style="padding-bottom: 8px"></div>
+    <footer class="divfooter">
+        <div class="container" style="padding-left: 80px">
+          <div style="padding-top: 85px"><h3>180 Sansome Street, San Francisco, CA 94104/ +1 23456789</h3></div>
+        <div><a href="#">Event</a> | <a href="#">Technology Campus</a> | <a href="#">Corporate Innovation</a> | <a href="#">Services</a> | <a href="#">Startup Members+Alumni Corporate</a></div>
+        <div style="padding-bottom: 35px"><a href="#">Clients</a></div>
+        <div><a href="#">About</a>  <a href="#">Partners</a>  <a href="#">Career</a>  <a href="#">News</a>  <a href="#">Blog</a>  <a href="#">Contact</a></div>
+        <div style="font-size: smaller">&copy; Copyright 2011-2016 Network Story</div>
+        <div style="padding-bottom: 150px"></div>
       </div>
       <!-- end Container-->
     </footer>

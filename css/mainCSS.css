@@ -1,44 +1,50 @@
-.bt-login,.bt-login:hover, .bt-login:active, .bt-login:focus {
-    background-color: #ff8627;
-    color: #ffffff;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    transition: background-color 300ms linear 0s;
-}
 
-
-.login-tab {
-	margin: 0 auto;
-	max-width: 380px;
+      .navbar {
+        background-color: transparent;
+        background: transparent;
+        border: 0;
+      }
+  
+    .navbar li { color: #000 }
+    #headerDiv
+    {
+      margin: 0;
+      padding-top: 270px;
+      padding-left: 800px;
+      width: 100%;
+      height:auto;
+    }
+    .btn-transparent {
+    background: transparent;
+    color: #F2F2F2;
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border: 1px solid black;
+    border-top-left-radius:2em; 
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em; 
+    border-bottom-right-radius:2em;
 }
-
-.login-modal-header {
-	background: #27ae60;
-	color: #fff;
-}
-
-.login-modal-header .modal-title {
-	color: #fff;
-}
-
-.login-modal-header .close {
-	color: #fff;
-}
-
-.login-modal i {
-	color: #000;
-}
-
-.login-modal form {
-	max-width: 340px;
-}
-
-.tab-pane form {
-	margin: 0 auto;
-}
-.login-modal-footer{
-	margin-top:15px;
-	margin-bottom:15px;
-}.row-fluid {
-
-}
+      .carousel-inner{
+      width:100%;
+      }
+      
+     .divHeader
+     {
+        height: auto;
+        background-image:url(images/polygon.png),url(images/header.png),url(images/poly.png),url(images/header.png);
+        /*,url(images/poly.svg)*/
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
+    }
+    /*.divHeader
+     {
+        height: 750px;
+        background-image: url(images/headercone.png), url(images/headerconeleftbottom.png),url(images/headerconerightbottom.png),url(images/headerconerightside.png),url(images/NavBack.png),url(images/funnel.png),url(images/header.png) ;
+        background-repeat: no-repeat;
+        background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
+        background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
+    }*/

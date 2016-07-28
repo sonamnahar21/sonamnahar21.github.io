@@ -17,11 +17,7 @@
     <script src="js/login.js" type="text/javascript"></script>
     <link href="css/mainCSS.css" type="text/css" rel="stylesheet">
     <style>
-      .carousel-inner > .item > img,
-      .carousel-inner > .item > a > img {
-      width:100%;
-      margin: auto;
-      }
+      
       .navbar {
         background-color: transparent;
         background: transparent;
@@ -54,18 +50,23 @@
       width:100%;
       }
       
-      .divHeader {
-  
-    height: 750px;
-    background-image: url(images/headercone.png), url(images/headerconeleftbottom.png),url(images/headerconerightbottom.png),url(images/headerconerightside.png),url(images/NavBack.png),url(images/funnel.png),url(images/header.png) ;
-    background-repeat: no-repeat;
-    background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
-  /*  -webkit-background-size: auto,auto,auto,auto,auto,auto,cover;
-    -moz-background-size:auto,auto,auto,auto,auto,auto,cover;
-    -o-background-size: auto,auto,auto,auto,auto,auto,cover;*/
-    background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
-    /*1830px 50px*/
-}
+     .divHeader
+     {
+        height: auto;
+        background-image:url(images/polygon.png),url(images/header.png),url(images/poly.png),url(images/header.png);
+        /*,url(images/poly.svg)*/
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
+    }
+    /*.divHeader
+     {
+        height: 750px;
+        background-image: url(images/headercone.png), url(images/headerconeleftbottom.png),url(images/headerconerightbottom.png),url(images/headerconerightside.png),url(images/NavBack.png),url(images/funnel.png),url(images/header.png) ;
+        background-repeat: no-repeat;
+        background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
+        background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
+    }*/
 h1
 {
     margin: 0px;
@@ -106,6 +107,90 @@ h3{
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color:black;
+}
+ul#Sponcers li
+{
+    display:inline;
+}
+
+ul#Sponcers li img
+{
+    filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+ul#Sponcers li img:hover
+{
+    filter: none;
+  -webkit-filter: grayscale(0);
+}
+.img-Sponcers{
+   
+    height: 110px;
+    display:inline;
+    padding-right: 30px;
+}
+ul#startups li
+{
+    display:inline;
+}
+.img-startup
+{
+     padding-right: 70px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    padding:0px;
+}
+.panel-primary
+{
+    border-color: transparent;
+}
+.panel-body
+{
+    padding: 0px;
+}
+#container
+{
+width: 25%;
+height:275px;
+position: relative;
+}
+
+#bottom-right
+{
+right: 0;
+bottom: 0;
+position: absolute;
+}
+#bottom-right h3 a
+{
+    float:  right;
+    color: white;
+}
+#bottom-right span
+{
+    
+    color: white;
+}
+
+.caption
+{
+    background: url(images/bannerside.png);
+    padding-left: 50px;
+}
+.col-xs-6
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.table 
+{
+    margin-bottom: 0px ;
+}
+.panel
+{
+    margin-bottom: 0px ;
 }
     </style>
    
@@ -169,37 +254,238 @@ h3{
           </section>
         </div>
     <!-- end row -->
-    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
-        <section>
-            <div>
-                <img src="images/row4.png" style="width: 100%"  >
-          </div>
-      </section>
-    </div>
-    <!-- end row -->
-    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;border-style: solid;">
-      <section>
-          <div class="row" style="height: 200px;">
-              <span style="padding-left: 100px"> Row 5 to be done </span>
-        </div>
-          </section>
-        </div>
-    <!-- end row -->
      <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
         <section>
-            <div>
-                <img src="images/row6.png" style="width: 100%"  >
+            <div style="padding-top: 45px;padding-bottom: 45px">
+                <h2 style="text-align: center">Why You Will Love Network Story</h2>
           </div>
       </section>
     </div>
+    <div class="container-fluid" ng-view="" style="padding-left: 0px;padding-right: 0px">
+        <div class="row">
+        <div class="panel panel-primary">
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+             <tbody>
+                  <tr>
+                         <td style="background: url('images/techfounder1.png')" id="container">
+                             <div id="bottom-right">
+                            <h3><a href="#">Tech Founder</a></h3>
+                            <span style="float: right">Find workplace,network,VCs,client</span>
+                            <span style="float: right;padding-bottom: 30px;">&nbsp;</span>
+                            </div>
+                        </td>
+                         <td style="background: url('images/counsulting.png')" id="container">
+                             <div id="bottom-right">
+                            <h3><a href="#">Consulting</a></h3>
+                            <span style="float: right">We help you with your IT,HR,Accounting</span>
+                            <span style="float: right;padding-bottom: 10px">,Operations,Sales & Marketing Needs</span>
+                            </div>
+                        </td>
+                         <td style="background: url('images/accelator.png')" id="container">
+                             <div id="bottom-right">
+                            <h3><a href="#">Accelator</a></h3>
+                            <span style="float: right">We help you with your IT,HR,Accounting</span>
+                            <span style="float: right;padding-bottom: 10px">,Operations,Sales & Marketing Needs</span>
+                            </div>
+                        </td>
+                        <td style="background: url('images/investors.png')" id="container">
+                            <div id="bottom-right">
+                            <h3><a href="#">Investors</a></h3>
+                            <span style="float: right">Benefit from direct financial support</span>
+                            <span style="float: right;padding-bottom: 30px;">&nbsp;</span>
+                            </div>
+                        </td>
+                  </tr>
+                  <tr>
+                         <td style="background: url('images/startups.png')" id="container">
+                            <div id="bottom-right">
+                            <h3><a href="#">Startups</a></h3>
+                            <span style="float: right">Collaborating workplace with</span>
+                            <br>
+                            <span style="float: right;padding-bottom: 10px">productivity enhancing environment</span>
+                            </div>
+                        </td>
+                       <td style="background: url('images/enterpreneuss.png')" id="container">
+                           <div  id="bottom-right">
+                                <h3><a href="#">Enterpreneuss</a></h3>
+                                <span style="float: right">High security workplace for</span>
+                                <br>
+                                <span style="float: right;padding-bottom: 10px">peace of mind and business growth</span>
+                            </div>
+                        </td>
+                     <td style="background: url('images/mentors.png')" id="container">
+                           <div  id="bottom-right">
+                                <h3><a href="#">Mentor</a></h3>
+                                <span style="float: right">New way of working in which people</span>
+                                <br>
+                                <span style="float: right;padding-bottom: 10px">from diverse background</span>
+                            </div>
+                        </td>
+                       <td style="background: url('images/ventures.png')" id="container">
+                           <div  id="bottom-right">
+                                <h3><a href="#">Ventures</a></h3>
+                                <span style="float: right">Discover best startup easily,get</span>
+                                <br>
+                                <span style="float: right;padding-bottom: 10px">personalized deal flow</span>
+                            </div>
+                        </td>
+                  </tr>
+        </tbody>
+
+                </table>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+    </div>
+   <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="padding-left: 150px">
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                               <div class="col-xs-6"><img class="img-responsive media-object" src="images/j.png"> </div>
+                               <div class="col-xs-6">
+                                   <div class="caption">
+                                        <div style="padding-top: 55px;color: white">
+                                            <h1>Hear it from our members!</h1>
+                                        </div>
+                                        <div style="padding-top: 125px;color: white">
+                                            <h2>J Ranja<h2>
+                                                    <h4>CEO Intelliber Technologies Inc</h4>
+                                        </div>
+                                        <div style="padding-top: 55px;color: white">
+                                            <span>Network Story is a great member app. It has helped us streamline our</span>
+                                            <br>
+                                            <span>billing and communication to our members. The team has been incredibly responsive.</span>
+                                            <br>
+                                            <span>As we grow,Network Story has been able to adapt our needs</span>
+                                            <br>
+                                        </div>
+                                        <div style="padding-bottom: 110px"></div>
+                                    </div>
+                               </div>
+                             
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                               <div class="col-xs-6"><img class="img-responsive media-object" src="images/j.png"> </div>
+                               <div class="col-xs-6">
+                                    <div class="caption">
+                                        <div style="padding-top: 55px;color: white">
+                                            <h1>Hear it from our members!</h1>
+                                        </div>
+                                        <div style="padding-top: 125px;color: white">
+                                            <h2>J Ranja<h2>
+                                                    <h4>CEO Intelliber Technologies Inc</h4>
+                                        </div>
+                                        <div style="padding-top: 55px;color: white">
+                                            <span>Network Story is a great member app. It has helped us streamline our</span>
+                                            <br>
+                                            <span>billing and communication to our members. The team has been incredibly responsive.</span>
+                                            <br>
+                                            <span>As we grow,Network Story has been able to adapt our needs</span>
+                                            <br>
+                                        </div>
+                                        <div style="padding-bottom: 110px"></div>
+                                    </div>
+                               </div>
+                          
+                      
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                       
+                           
+                               <div class="col-xs-6"><img class="img-responsive media-object" src="images/j.png"> </div>
+                               <div class="col-xs-6">
+                                    <div class="caption">
+                                        <div style="padding-top: 55px;color: white">
+                                            <h1>Hear it from our members!</h1>
+                                        </div>
+                                        <div style="padding-top: 125px;color: white">
+                                            <h2>J Ranja<h2>
+                                                    <h4>CEO Intelliber Technologies Inc</h4>
+                                        </div>
+                                        <div style="padding-top: 55px;color: white">
+                                            <span>Network Story is a great member app. It has helped us streamline our</span>
+                                            <br>
+                                            <span>billing and communication to our members. The team has been incredibly responsive.</span>
+                                            <br>
+                                            <span>As we grow,Network Story has been able to adapt our needs</span>
+                                            <br>
+                                        </div>
+                                        <div style="padding-bottom: 110px"></div>
+                                    </div>
+                               </div>
+                         
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
         <section>
-            <div>
-                <img src="images/row7.png" style="width: 100%"  >
+            <div style="padding-top: 80px;padding-bottom: 80px">
+                <h2 style="text-align: center">Proudly sponsored by</h2>
           </div>
+      </section>
+    </div>
+    <div class="row-fluid" style="padding-left: 0px;padding-right: 0px;">
+        <section>
+        <div style="padding-left: 10px">
+            <ul id="Sponcers">
+                <li><a href="#"><img src="images/stpi.png" class="img-Sponcers" ></a></li>
+                <li><a href="#"><img src="images/bengal.png" class="img-Sponcers"></a></li>
+                <li><a href="#"><img src="images/digitalIndia.png" class="img-Sponcers"></a></li>
+                <li><a href="#"><img src="images/startupIndia.png" class="img-Sponcers"></a></li>
+                <li><a href="#"><img src="images/MadeInIndia.png" class="img-Sponcers"></a></li>
+            </ul>
+        </div>
       </section>
     </div>
     <!-- End Container -->
+      <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <section>
+            <div style="padding-top: 80px;padding-bottom: 80px">
+                <h2 style="text-align: center">Startups at Network Story</h2>
+          </div>
+      </section>
+    </div>
+    <div class="row-fluid" style="padding-left: 0px;padding-right: 0px;">
+        <section>
+        <div style="padding-left: 10px">
+            <ul id="startups">
+                <li><a href="#"><img src="images/contentuals.png"  class="img-startup"></a></li>
+                <li><a href="#"><img src="images/convask.png" class="img-startup"></a></li>
+                <li><a href="#"><img src="images/intelliber.png" class="img-startup"></a></li>
+                <li><a href="#"><img src="images/itmrd.png" class="img-startup" ></a></li>
+                <li><a href="#"><img src="images/socialyk.png" class="img-startup"></a></li>
+            </ul>
+        </div>
+      </section>
+    </div>
+    <!-- End Container -->
+     <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+        <section>
+            <div>
+                <img src="images/Baybridge.png" class="center-block"  >
+          </div>
+      </section>
+    </div>
     <!-- Footer -->
     <footer class="divfooter">
         <div class="container" style="padding-left: 80px">
@@ -212,6 +498,7 @@ h3{
       </div>
       <!-- end Container-->
     </footer>
+    
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
   </body>

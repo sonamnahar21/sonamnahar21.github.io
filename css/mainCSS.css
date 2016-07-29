@@ -1,5 +1,22 @@
-
-      .navbar {
+.divHeader
+     {
+        height: auto;
+        background-image:url(../images/bf123.png),url(../images/header.png);
+      
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size:cover;
+    }
+  /*  .divHeader
+     {
+        height: 750px;
+        background-image: url(../images/headercone.png), url(../images/headerconeleftbottom.png),url(../images/headerconerightbottom.png),url(../images/headerconerightside.png),url(../images/NavBack.png),url(../images/funnel.png),url(../images/header.png) ;
+        background-repeat: no-repeat;
+        background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
+        background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
+    }*/
+  
+.navbar {
         background-color: transparent;
         background: transparent;
         border: 0;
@@ -13,6 +30,7 @@
       padding-left: 800px;
       width: 100%;
       height:auto;
+      padding-bottom: 195px;
     }
     .btn-transparent {
     background: transparent;
@@ -30,21 +48,230 @@
       .carousel-inner{
       width:100%;
       }
-      
-     .divHeader
-     {
-        height: auto;
-        background-image:url(images/polygon.png),url(images/header.png),url(images/poly.png),url(images/header.png);
-        /*,url(images/poly.svg)*/
-        background-repeat: no-repeat;
-        background-position: 0;
-        background-size: cover;
-    }
-    /*.divHeader
-     {
-        height: 750px;
-        background-image: url(images/headercone.png), url(images/headerconeleftbottom.png),url(images/headerconerightbottom.png),url(images/headerconerightside.png),url(images/NavBack.png),url(images/funnel.png),url(images/header.png) ;
-        background-repeat: no-repeat;
-        background-position: top left, bottom left,bottom right,top right,top left,right 500px bottom 200px,0;
-        background-size: auto,auto,auto,auto,1220px 54px,auto,cover;
-    }*/
+
+h1
+{
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+margin: 0 0 0px 0;
+}
+h3{
+    margin: 0 0 0px 0;
+}
+.secondRow
+{
+    height: auto;
+    background-image: url(../images/2rowbackground.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+}
+.divfooter
+{
+    height: auto;
+    background-image: url(../images/footerbg.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+    color: white;
+    text-align: left
+}
+.divfooter a
+{ 
+    color: white;
+    font-size:smaller;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color:black;
+}
+ul#Sponcers li
+{
+    display:inline;
+}
+
+ul#Sponcers li img
+{
+    filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+ul#Sponcers li img:hover
+{
+    filter: none;
+  -webkit-filter: grayscale(0);
+}
+.img-Sponcers{
+   
+    height: 110px;
+    display:inline;
+    padding-right: 30px;
+}
+ul#startups li
+{
+    display:inline;
+}
+.img-startup
+{
+     padding-right: 70px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    padding:0px;
+}
+.panel-primary
+{
+    border-color: transparent;
+}
+.panel-body
+{
+    padding: 0px;
+}
+#container
+{
+width: 25%;
+height:275px;
+position: relative;
+}
+#container a
+{
+    color: white;
+    text-align: right;
+}
+.mentorbg
+{
+ background:url(../images/img-overlay.png),url(../images/mentors.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;    
+}
+.techFounderBg
+{
+ background:url(../images/img-overlay.png),url(../images/techfounder.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;    
+}
+.Enterpreneussbg
+{
+     background:url(../images/img-overlay.png),url(../images/enterpreneuss.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;  
+}
+.Startupsbg
+{
+    background:url(../images/img-overlay.png),url(../images/startups.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;  
+}
+.Venturesbg
+{
+ background:url(../images/img-overlay.png),url(../images/ventures.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;    
+}
+.Investorsbg
+{
+    background:url(../images/img-overlay.png),url(../images/investors.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;
+}
+.Accelatorbg
+{
+     background:url(../images/img-overlay.png),url(../images/accelator.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;
+}
+.Consultingbg
+{
+    background:url(../images/img-overlay.png),url(../images/counsulting.png) ;
+ background-repeat:repeat,no-repeat;
+ background-position: 0;
+ position: absolute;
+}
+#bottom-right
+{
+right: 0;
+bottom: 0;
+position: absolute;
+}
+#bottom-right h3 a
+{
+    float:  right;
+    color: white;
+}
+#bottom-right span
+{
+    
+    color: white;
+}
+.captiontestimonial
+{
+    background: url(../images/bannerside.png);
+    padding-left: 50px;
+}
+.col-xs-6
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.table 
+{
+    margin-bottom: 0px ;
+}
+.panel
+{
+    margin-bottom: 0px ;
+}
+.row3
+{
+   
+    
+     height: auto;
+     background-image:url(../images/row3bg1.png),url(../images/row3bg.png);
+    background-repeat: no-repeat;
+    background-position: 0,0;
+        background-size:cover, cover;
+}
+.captionRow3
+{
+    height:auto; 
+    background-repeat: no-repeat;
+    background-position: 0;   
+    background-size:cover;
+    padding-left: 115px;
+}
+.captionRow2RightSide
+{
+   padding-top: 35px; 
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev
+{
+    top: 85%;
+}
+.left
+{
+    background: transparent;
+}
+.right
+{
+    background: transparent;
+}
+td a {
+    display:block;
+    width:100%;
+    height: 100%;
+}
+.row
+{
+    margin-right: 0px;
+}

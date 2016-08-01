@@ -1,11 +1,12 @@
 .divHeader
      {
-        height: auto;
+       
         background-image:url(../images/bf123.png),url(../images/header.png);
       
         background-repeat: no-repeat;
         background-position: 0;
         background-size:cover;
+        
     }
   /*  .divHeader
      {
@@ -115,9 +116,11 @@ ul#startups li
 {
     display:inline;
 }
+
 .img-startup
 {
-     padding-right: 70px;
+    display: inline;
+    padding-right: 70px;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
 {
@@ -274,4 +277,105 @@ td a {
 .row
 {
     margin-right: 0px;
+}
+/******************************/
+#userSpeak > div {
+	min-height: 625px;
+}
+.width-100-per {
+	width: 100% !important;
+}
+.bg-sky-light {
+	background-color: #68bcc7;
+}
+.min-height-300 {
+	min-height: 300px;
+}
+.quotes-left {
+	padding: 50px 0 100px 0;
+}
+.relative {
+	position: relative;
+}
+.quote-text {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 100px;
+	color: #69c3cb;
+	font-weight: bold;
+	letter-spacing: 30px;
+    
+}
+.colour-white {
+	color: #fff;
+}
+.font-38 {
+	font-size:38px;
+}
+.bold {
+	font-weight: 700;
+}
+.rotate-180 {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.round-me {
+	border-radius: 50%;
+}
+.height-60-square {
+	height: 60px;
+	width: 60px;
+}
+.border-left-2 {
+	border-left: 1px solid #E5E5E5;
+}
+.padding-left-20 {
+	padding-left: 20px;
+}
+.margin-left-20 {
+	margin-left: 20px;
+}
+.font-13 {
+	font-size: 13px;
+}
+#quoteImage {
+ background-image:url(../images/quote.jpg);
+	background-size: cover;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	min-height: 625px;
+}
+
+.border-bottom-2 {
+	border-bottom: 1px solid #E6E6E6;
+}
+.width-70-per {
+	width: 70% !important;
+}
+.margin-left-60 {
+	margin-left: 60px;
+}
+.margin-top-alt-7 {
+	margin-top: -7px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-top-50 {
+	margin-top: 50px;
+}
+.margin-top-40 {
+	margin-top: 40px;
+}
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+.margin-right-10 {
+	margin-right: 10px;
+}
+.margin-left-10 {
+	margin-left: 10px;
 }

@@ -1,13 +1,28 @@
+
 .divHeader
      {
-       
-        background-image:url(../images/bf123.png),url(../images/header.png);
-      
-        background-repeat: no-repeat;
-        background-position: 0;
-        background-size:cover;
-        
+        background-image:url(../images/header.png);     
+       background-position: center bottom;
+        background-attachment: fixed;
+       position: relative;
+       width: 100%;
     }
+.bgpattern
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/bgbanner.png)  no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.relative
+{
+    position: relative;
+}
   /*  .divHeader
      {
         height: 750px;
@@ -28,10 +43,11 @@
     {
       margin: 0;
       padding-top: 270px;
-      padding-left: 800px;
+     /* padding-left: 900px;*/
       width: 100%;
       height:auto;
       padding-bottom: 195px;
+      position: relative;
     }
     .btn-transparent {
     background: transparent;
@@ -68,6 +84,8 @@ h3{
     background-repeat: no-repeat;
     background-position: 0;
     background-size:cover;
+    padding-top: 265px;
+    padding-bottom: 250px;
 }
 .divfooter
 {
@@ -108,9 +126,10 @@ ul#Sponcers li img:hover
 }
 .img-Sponcers{
    
-    height: 110px;
+    height: auto;
+    width: auto;
     display:inline;
-    padding-right: 30px;
+    padding-right: 70px;
 }
 ul#startups li
 {
@@ -122,18 +141,8 @@ ul#startups li
     display: inline;
     padding-right: 70px;
 }
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
-{
-    padding:0px;
-}
-.panel-primary
-{
-    border-color: transparent;
-}
-.panel-body
-{
-    padding: 0px;
-}
+
+
 #container
 {
 width: 25%;
@@ -238,16 +247,18 @@ position: absolute;
 {
     margin-bottom: 0px ;
 }
+
 .row3
 {
-   
-    
-     height: auto;
-     background-image:url(../images/row3bg1.png),url(../images/row3bg.png);
+    height: auto;
+    background-image:url(../images/row3bg1.png),url(../images/row3bg.png);
     background-repeat: no-repeat;
-    background-position: 0,0;
-        background-size:cover, cover;
+    background-position: 0;
+    background-size:cover;
+ 
+    
 }
+
 .captionRow3
 {
     height:auto; 
@@ -382,3 +393,71 @@ td a {
 .margin-left-10 {
 	margin-left: 10px;
 }
+/********************/
+/*#element-with-background-image {
+   position: relative;
+   background-image: url("../images/row3bg1.png");
+   height: 500px;
+}
+ 
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("../images/row3bg.png");
+  opacity: 0.6;
+}*/
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 100%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+        .removePadding
+        {
+            padding-right: 0px;
+        }
+}
+/*.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    padding:0px;
+}*/

@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/mainCSS.css">
   </head>
   <body>
-    <div class="divHeader img-responsive">
-        <h2> <span style="color: white;margin-top: 0;margin-left: 20px">Network</br><span style="margin-left: 20px"> Story</span></h2>
+    <div class="divHeader row-fluid">
+        <div class="bgpattern"><h2> <span style="color: white;margin-top: 0;margin-left: 20px">Network</br><span style="margin-left: 20px"> Story</span></h2></div>
+        
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" id="my-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -44,29 +45,40 @@
       </div>
       <!-- End Container-->
     </nav>
-    <div class="container text-center row" id='headerDiv'>
-      <h1>WE HELP YOU TO MOVE</h1>
-      <h1>FROM ZERO TO ONE</h1>
-      <h2>Without Reinventing The Wheel</h2>
-      </br>
-      <h3>Powered by <span style="font-weight: bold"> Intelliber</span> for Entrepreneurs</h3>
-      <div class="btn-group">
-          <a href="" class="btn  btn-transparent" style="color: black"> Apply its free</a>
+    <div class="container clearfix" id='headerDiv'>
+      <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <h2>WE HELP YOU TO MOVE</h2>
+            <h2>FROM ZERO TO ONE</h2>
+            <h3>Without Reinventing The Wheel</h3>
+            <br>
+            <h4>Powered by <span style="font-weight: bold"> Intelliber</span> for Entrepreneurs</h4>
+            <div class="btn-group">
+                <a href="" class="btn  btn-transparent" style="color: black"> Apply its free</a>
       </div>
-    </div>
+       </div>
+     </div>
           </div>
-    <div class="container-fluid span12" style="padding-left: 0px;padding-right: 0px">
+    <div class="container-fluid span12 " style="padding-left: 0px;padding-right: 0px">
       <section>
-        <div class="row secondRow">
-            <div style="padding-top: 265px;padding-left: 420px;padding-bottom: 250px; color: white">  
-                <h4>If your looking for information about Network Story, they have a new home</h4>
-                <a style="padding-left: 250px;color: white;cursor: pointer" href="#"><img src="images/2rowicon.png" class="img-responsive"> Click here
+        <div class="row secondRow text-center">
+            <!--<div style="padding-top: 265px;padding-left: 420px;padding-bottom: 250px; color: white">  -->
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <a style="padding-left: 250px;color: white;cursor: pointer" href="#">
+                    <h4>If your looking for information about Network Story, they have a new home</h4>
+                    <img src="images/2rowicon.png" > Click here
                 </a>
             </div>
         </div>
       </section>
+    </div>
+   <!-- <div id="element-with-background-image">
+        <div id="color-overlay">
+            
         </div>
-    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
+    </div>-->
+     <div class="container-fluid "  style="padding-left: 0px;padding-right: 0px">
         <div id="Mycarousel" class="carousel slide" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
@@ -136,105 +148,12 @@
           </div>
       </section>
     </div>
-    <div class="container-fluid box" ng-view="" style="padding-left: 0px;padding-right: 0px">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 techFounderBg" id="container">
-            <a href="#"> 
-                <div id="bottom-right">
-                <h3>Tech Founder</h3>
-                <span style="float: right">Find workplace,network,VCs,client</span>
-                <span style="float: right;padding-bottom: 30px;">&nbsp;</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-3 Consultingbg" id="container">
-            <a href="#"> 
-             <div id="bottom-right">
-            <h3>Consulting</h3>
-            <span style="float: right">We help you with your IT,HR,Accounting</span>
-            <span style="float: right;padding-bottom: 10px">,Operations,Sales & Marketing Needs</span>
-             </div>
-            </a>    
-        </div>
-
-    <!-- Add the extra clearfix for only the required viewport -->
-    <div class="clearfix visible-xs-block"></div>
-    <div class="col-xs-6 col-sm-3 Accelatorbg" id="container">
-        <a href="#"> 
-         <div id="bottom-right">
-        <h3>Accelator</h3>
-        <span style="float: right">We help you with your IT,HR,Accounting</span>
-        <span style="float: right;padding-bottom: 10px">,Operations,Sales & Marketing Needs</span>
-        </div>
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-3 Investorsbg" id="container">
-        <a href="#"> 
-        <div id="bottom-right">
-        <h3>Investors</h3>
-        <span style="float: right">Benefit from direct financial support</span>
-        <span style="float: right;padding-bottom: 30px;">&nbsp;</span>
-        </div>
-        </a>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 Startupsbg" id="container" >
-        <a href="#"> 
-            <div id="bottom-right">
-            <h3>Startups</h3>
-            <span style="float: right">Collaborating workplace with</span>
-            <br>
-            <span style="float: right;padding-bottom: 10px">productivity enhancing environment</span>
-            </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-3 Enterpreneussbg" id="container">
-          <a href="#"> 
-            <div  id="bottom-right">
-                <h3>Enterpreneuss</h3>
-                <span style="float: right">High security workplace for</span>
-                <br>
-                <span style="float: right;padding-bottom: 10px">peace of mind and business growth</span>
-            </div>
-           </a>
-        </div>
-
-  <!-- Add the extra clearfix for only the required viewport -->
-  <div class="clearfix visible-xs-block"></div>
-
-  <div class="col-xs-6 col-sm-3 mentorbg" id="container">
-
-        <a href="#">
-       <div  id="bottom-right">
-            <h3>Mentor</h3>
-            <span style="float: right">New way of working in which people</span>
-            <br>
-            <span style="float: right;padding-bottom: 10px">from diverse background</span>
-        </div>
-
-    </a>
-  </div>
-  <div class="col-xs-6 col-sm-3 Venturesbg" id="container">
-       <a href="#"> 
-        <div  id="bottom-right">
-             <h3>Ventures</h3>
-             <span style="float: right">Discover best startup easily,get</span>
-             <br>
-             <span style="float: right;padding-bottom: 10px">personalized deal flow</span>
-         </div>
-     </a>
-  </div>
-</div>
-    </div>
-   <!-- <div class="container-fluid box" ng-view="" style="padding-left: 0px;padding-right: 0px">
+    <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
         <div class="row">
-        <div class="panel panel-primary">
-        <div class="panel-body">
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped">
-             <tbody>
-                 <tr class="row">
+         <div id="no-more-tables">
+            <table class="col-md-12 table-bordered table-striped table-condensed cf removePadding">
+                <tbody>
+                 <tr>
                       <td id="container" class="techFounderBg">
                          
                             <a href="#"> 
@@ -273,7 +192,7 @@
                             </a>
                         </td>
                   </tr>
-                  <tr class="row">
+                  <tr>
                          <td id="container" class="Startupsbg">
                             <a href="#"> 
                             <div id="bottom-right">
@@ -317,16 +236,13 @@
                             </div>
                         </a>
                         </td>
-                  </tr>
-        </tbody>
-
-                </table>
-            </div>
-            
+                 	</tr>
+        		</tbody>
+        	</table>
         </div>
     </div>
-  </div>
-    </div>-->
+    </div>
+    
   <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
   <div class="width-100-per clearfix" id="userSpeak">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 min-height-300 bg-sky-light quotes-left relative">
@@ -370,7 +286,7 @@
   </div>
     <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
         <section>
-            <div style="padding-top: 80px;padding-bottom: 80px">
+            <div style="padding-top: 40px;padding-bottom: 40px">
                 <h2 style="text-align: center">Proudly sponsored by</h2>
           </div>
       </section>
@@ -379,7 +295,7 @@
         <section>
         <div style="padding-left: 10px">
             <ul id="Sponcers">
-                <li><a href="#"><img src="images/stpi.png" class="img-Sponcers img-responsive" ></a></li>
+                <li><a href="#"><img src="images/stpi.png" class="img-Sponcers img-responsive" style="padding-bottom: 30px" ></a></li>
                 <li><a href="#"><img src="images/bengal.png" class="img-Sponcers img-responsive"></a></li>
                 <li><a href="#"><img src="images/digitalIndia.png" class="img-Sponcers img-responsive"></a></li>
                 <li><a href="#"><img src="images/startupIndia.png" class="img-Sponcers img-responsive"></a></li>
@@ -390,7 +306,7 @@
     </div>
     <div class="container-fluid" style="padding-left: 0px;padding-right: 0px">
         <section>
-            <div style="padding-top: 80px;padding-bottom: 80px">
+            <div style="padding-top: 40px;padding-bottom: 40px">
                 <h2 style="text-align: center">Startups at Network Story</h2>
           </div>
       </section>

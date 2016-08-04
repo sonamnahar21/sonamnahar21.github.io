@@ -734,7 +734,6 @@ td a {
 {
     font-family: open_sansregular;
     font-size: 15px;
-    
 }
 .eachRow
 {
@@ -781,4 +780,13 @@ td a {
 .marginRight7
 {
     margin-right: 7px;
+}
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #DCDCDC;}
+.collapsing ul li a, .in ul li a {color: black!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: white!important;}
+}
+#my-navbar
+{
+    height: 65px;
 }

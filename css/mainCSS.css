@@ -1,9 +1,9 @@
 
 .divHeader
      {
-        background-image:url(../images/header.png);     
+        background-image:url(../images/header.png) ;     
        background-position: center bottom;
-        background-attachment: fixed;
+      background-repeat: no-repeat;
        position: relative;
        width: 100%;
     }
@@ -16,7 +16,6 @@
     width: 100%;
     background: url(../images/bgbanner.png)  no-repeat;
     background-position: center bottom;
-    background-attachment: fixed;
     background-size: cover;
 }
 .relative
@@ -42,11 +41,11 @@
     #headerDiv
     {
       margin: 0;
-      padding-top: 270px;
+      padding-top: 150px;
      /* padding-left: 900px;*/
       width: 100%;
       height:auto;
-      padding-bottom: 195px;
+      padding-bottom: 315px;
       position: relative;
     }
     .btn-transparent {
@@ -71,9 +70,7 @@ h1
     margin: 0px;
     padding: 0px;
 }
-h2 {
-margin: 0 0 0px 0;
-}
+
 h3{
     margin: 0 0 0px 0;
 }
@@ -248,17 +245,24 @@ position: absolute;
     margin-bottom: 0px ;
 }
 
-.row3
+/*#backgroundID
 {
     height: auto;
-    background-image:url(../images/row3bg1.png),url(../images/row3bg.png);
+    background-image:url(../images/row3bg1.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size:cover;
- 
-    
+    position: relative; 
+}*/
+.row3
+{
+    height: 100%;
+    background-image:url(../images/row3bg.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+ /*   position: fixed;*/
 }
-
 .captionRow3
 {
     height:auto; 
@@ -266,6 +270,9 @@ position: absolute;
     background-position: 0;   
     background-size:cover;
     padding-left: 115px;
+    position: relative;
+    z-index: 3;
+    padding-top: 150px;
 }
 .captionRow2RightSide
 {
@@ -300,7 +307,8 @@ td a {
 	width: 100% !important;
 }
 .bg-sky-light {
-	background-color: #68bcc7;
+	background: url(../images/bannerside.png);
+        min-height: 625px;
 }
 .min-height-300 {
 	min-height: 300px;
@@ -326,6 +334,9 @@ td a {
 }
 .font-38 {
 	font-size:38px;
+}
+.font-36 {
+	font-size:36px;
 }
 .bold {
 	font-weight: 700;
@@ -356,7 +367,7 @@ td a {
 	font-size: 13px;
 }
 #quoteImage {
- background-image:url(../images/quote.jpg);
+    background-image:url(../images/j.png);
 	background-size: cover;
 	background-position: left bottom;
 	background-repeat: no-repeat;
@@ -461,3 +472,313 @@ td a {
 {
     padding:0px;
 }*/
+
+/*****************/
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-header{
+   
+    margin-left:-8% !important;
+}
+.carousel-indicators {
+                position: absolute;
+		bottom: -100px;
+		left: 0;
+                padding-left: 40px;
+		z-index: 15;
+		width: 60%;
+		margin-left: -30%;
+		text-align: center;
+}
+.fontWhite
+{
+    color: white;
+}
+
+
+@font-face {
+	font-family: 'Conv_MoolBoran';
+	src: url('../fonts/MoolBoran.eot');
+	src:  url('../fonts/MoolBoran.woff') format('woff'), 
+            url('../fonts/MoolBoran.ttf') format('ttf'), 
+            url('../fonts/MoolBoran.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Thin.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clrBlack
+{
+    color: black;
+}
+.clrWhite
+{
+    color: white;
+}
+.font15
+{
+    font-size: 15px;
+}
+.font17
+{
+    font-size: 17px;
+}
+.font18
+{
+    font-size: 18px;
+}
+.font14
+{
+    font-size: 14px;
+}
+.font22
+{
+    font-size: 22px;
+}
+.font24
+{
+    font-size: 24px;
+}
+.font20
+{
+    font-size: 20px;
+}
+.font30
+{
+    font-size: 30px;
+}
+.font52
+{
+    font-size: 52px;
+}
+.font30
+{
+    font-size: 30px;
+}
+.font35
+{
+    font-size: 35px;
+}
+.font36
+{
+    font-size: 36px;
+}
+.fontrobotothin
+{
+    font-family: robotothin;
+}
+.fontrobotomedium
+{
+    font-family: robotomedium;
+}
+.fontopen_sansbold
+{
+    font-family: open_sansbold;
+}
+.fontrobotolight
+{
+    font-family: robotolight;
+}
+.fontopen_sanslight
+{
+    font-family: open_sanslight;
+}
+.fontConv_MoolBoran
+{
+    font-family: Conv_MoolBoran;
+}
+.fontopen_sanssemibold
+{
+    font-family: open_sanssemibold;
+}
+.fontrobotoblack
+{
+    font-family: robotoblack;
+}
+.fontopen_sansregular
+{
+    font-family: open_sansregular;
+}
+.paddingLeft30
+{
+    padding-left: 30px;
+}
+.paddingLeft250
+{
+    padding-left: 250px;
+}
+.paddingTop30
+{
+    padding-top: 30px;
+}
+.paddingTop20
+{
+    padding-top: 20px;
+}
+.paddingTop55
+{
+    padding-top: 55px;
+}
+.paddingTop80
+{
+    padding-top: 80px;
+}
+.paddingBottom150
+{
+    padding-bottom: 150px;
+}
+.paddingTop45{
+    padding-top: 45px;
+}
+.paddingBottom45
+{
+    padding-bottom: 45px;
+}
+.paddingTop40{
+    padding-top: 40px;
+}
+.paddingBottom40
+{
+    padding-bottom: 40px;
+}
+.paddingBottom30
+{
+    padding-bottom: 30px;
+}
+.paddingLeft10
+{
+    padding-left:10 px;
+}
+.paddingLeft80
+{
+    padding-left:80 px;
+}
+.paddingBottom10
+{
+    padding-bottom: 10px;
+}
+.paddingBottom150
+{
+    padding-bottom: 150px;
+}
+#menu
+{
+    font-family: open_sansregular;
+    font-size: 15px;
+    
+}
+.eachRow
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.floatRight
+{
+    float: right;
+}
+/*******************/
+#MycarouselText
+{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    z-index: 2;
+}
+.MycarouselbgImage
+{
+    height: 100%;
+    width: 100%;
+    background-image:url(../images/row3bg1.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size:cover;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+.carousel-control
+{
+    z-index: 4;
+}
+.width30
+{
+    width: 25%;
+}
+.top45
+{
+    top: 45px;
+}
+.marginRight7
+{
+    margin-right: 7px;
+}

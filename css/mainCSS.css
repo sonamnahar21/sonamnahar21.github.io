@@ -790,3 +790,9 @@ td a {
 {
     height: 65px;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}

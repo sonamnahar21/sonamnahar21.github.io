@@ -2,21 +2,26 @@
 .divHeader
      {
         background-image:url(../images/header.png) ;     
-       background-position: center bottom;
+       
       background-repeat: no-repeat;
        position: relative;
        width: 100%;
+       height:100vh;
+       -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
     }
 .bgpattern
 {
     position: absolute;
-    left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
     background: url(../images/bgbanner.png)  no-repeat;
-    background-position: center bottom;
+    
     background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 .relative
 {
@@ -76,7 +81,7 @@ h3{
 }
 .secondRow
 {
-    height: auto;
+    height: 50vh;
     background-image: url(../images/2rowbackground.png);
     background-repeat: no-repeat;
     background-position: 0;
@@ -110,13 +115,13 @@ ul#Sponcers li
     display:inline;
 }
 
-ul#Sponcers li img
+#Sponcers a img
 {
     filter: gray; /* IE6-9 */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
-ul#Sponcers li img:hover
+#Sponcers a img:hover
 {
     filter: none;
   -webkit-filter: grayscale(0);
@@ -126,17 +131,16 @@ ul#Sponcers li img:hover
     height: auto;
     width: auto;
     display:inline;
-    padding-right: 70px;
-}
-ul#startups li
-{
-    display:inline;
+   /* padding-right: 70px;*/
+   text-align: center;
 }
 
 .img-startup
 {
+    height: auto;
+    width: auto;
     display: inline;
-    padding-right: 70px;
+   text-align: center;
 }
 
 
@@ -308,7 +312,7 @@ td a {
 }
 .bg-sky-light {
 	background: url(../images/bannerside.png);
-        min-height: 625px;
+        min-height: 100vh;
 }
 .min-height-300 {
 	min-height: 300px;
@@ -369,9 +373,10 @@ td a {
 #quoteImage {
     background-image:url(../images/j.png);
 	background-size: cover;
-	background-position: left bottom;
+	background-position: center center;
 	background-repeat: no-repeat;
-	min-height: 625px;
+	/*min-height: 625px;*/
+        min-height: 100vh;
 }
 
 .border-bottom-2 {
@@ -493,7 +498,6 @@ td a {
 		bottom: -100px;
 		left: 0;
                 padding-left: 40px;
-		z-index: 15;
 		width: 60%;
 		margin-left: -30%;
 		text-align: center;
@@ -773,9 +777,9 @@ td a {
 {
     width: 25%;
 }
-.top45
+.top100
 {
-    top: 45px;
+    top: 100px;
 }
 .marginRight7
 {
@@ -789,10 +793,50 @@ td a {
 #my-navbar
 {
     height: 65px;
+    box-shadow: inset 0 0px 0 transparent,0 0px 0px transparent;
 }
 html, body {
   overflow-x: hidden;
 }
 body {
   position: relative
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+.lineheight20
+{
+  line-height: 20px;
+}
+.lineheight25
+{
+  line-height: 25px;
 }

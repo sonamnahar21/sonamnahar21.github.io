@@ -50,7 +50,7 @@
      /* padding-left: 900px;*/
       width: 100%;
       height:auto;
-      padding-bottom: 315px;
+     /* padding-bottom: 315px;*/
       position: relative;
     }
     .btn-transparent {
@@ -312,7 +312,8 @@ td a {
 }
 .bg-sky-light {
 	background: url(../images/bannerside.png);
-        min-height: 100vh;
+        /*min-height: 100vh;*/
+        min-height: 500px;
 }
 .min-height-300 {
 	min-height: 300px;
@@ -375,8 +376,8 @@ td a {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	/*min-height: 625px;*/
-        min-height: 100vh;
+	min-height: 500px;
+        /*min-height: 100vh;*/
 }
 
 .border-bottom-2 {
@@ -494,13 +495,13 @@ td a {
     margin-left:-8% !important;
 }
 .carousel-indicators {
-                position: absolute;
+                /*position: absolute;
 		bottom: -100px;
 		left: 0;
                 padding-left: 40px;
 		width: 60%;
 		margin-left: -30%;
-		text-align: center;
+		text-align: center;*/
 }
 .fontWhite
 {
@@ -720,11 +721,11 @@ td a {
 }
 .paddingLeft10
 {
-    padding-left:10 px;
+    padding-left:10px;
 }
 .paddingLeft80
 {
-    padding-left:80 px;
+    padding-left:80px;
 }
 .paddingBottom10
 {
@@ -780,6 +781,7 @@ td a {
 .top130
 {
     top: 130px;
+   
 }
 .marginRight7
 {
@@ -839,4 +841,12 @@ body {
 .lineheight25
 {
   line-height: 25px;
+}
+
+ol, ul {
+    margin-top: 50px;
+}
+.left15
+{
+    left: 15px;
 }

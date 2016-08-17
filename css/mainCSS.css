@@ -148,54 +148,104 @@ ul#Sponcers li {
 	width: 100%;
 	height: 100%;
 }
+.bg-repeat-overlay {
+	background: url(../images/img-overlay.png) 0 0 repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+}
 .mentorbg {
-	background: url(../images/img-overlay.png), url(../images/mentors.png);
+	/*background: url(../images/img-overlay.png), url(../images/mentors.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/mentors.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .techFounderBg {
-	background: url(../images/img-overlay.png), url(../images/techfounder.png);
+	/*background:  url(../images/img-overlay.png),url(../images/techfounder.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
 	position: absolute;
+        background-size: cover;*/
         
+        height: auto;
+        background-image: url(../images/techfounder.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Enterpreneussbg {
-	background: url(../images/img-overlay.png), url(../images/enterpreneuss.png);
+	/*background: url(../images/img-overlay.png), url(../images/enterpreneuss.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/enterpreneuss.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Startupsbg {
-	background: url(../images/img-overlay.png), url(../images/startups.png);
+	/*background: url(../images/img-overlay.png), url(../images/startups.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/startups.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Venturesbg {
-	background: url(../images/img-overlay.png), url(../images/ventures.png);
+	/*background: url(../images/img-overlay.png), url(../images/ventures.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/ventures.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Investorsbg {
-	background: url(../images/img-overlay.png), url(../images/investors.png);
+	/*background: url(../images/img-overlay.png), url(../images/investors.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/investors.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Accelatorbg {
-	background: url(../images/img-overlay.png), url(../images/accelator.png);
+	/*background: url(../images/img-overlay.png), url(../images/accelator.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/accelator.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 .Consultingbg {
-	background: url(../images/img-overlay.png), url(../images/counsulting.png);
+	/*background: url(../images/img-overlay.png), url(../images/counsulting.png);
 	background-repeat: repeat, no-repeat;
 	background-position: 0;
-	position: absolute;
+	position: absolute;*/
+         height: auto;
+        background-image: url(../images/counsulting.png);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: cover;
 }
 #bottom-right {
 	right: 20px;
@@ -1031,6 +1081,10 @@ body {
     #headerDiv
     {
         padding-top: 245px;;
+    }
+    #container
+    {
+        width: 248px;
     }
    
 }

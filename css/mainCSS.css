@@ -136,12 +136,12 @@ ul#Sponcers li {
 	display: inline;
 	text-align: center;
 }
-#container {
+.containerBlock {
 	width: 25%;
 	height: 275px;
 	position: relative;
 }
-#container a {
+.containerBlock a {
 	color: white;
 	text-align: right;
 	display: block;
@@ -247,16 +247,16 @@ ul#Sponcers li {
         background-position: 0;
         background-size: cover;
 }
-#bottom-right {
+.bottom-right {
 	right: 20px;
 	bottom: 0;
 	position: absolute;
 }
-#bottom-right h3 a {
+.bottom-right h3 a {
 	float: right;
 	color: white;
 }
-#bottom-right span {
+.bottom-right span {
 	color: white;
 }
 .captiontestimonial {
@@ -946,6 +946,10 @@ body {
     {
         font-size: 28px;
     }
+    .containerBlock
+    {
+        height: 248px;
+    }
 }
 @media only screen and (min-width: 360px) {
     #headerDiv
@@ -1082,9 +1086,10 @@ body {
     {
         padding-top: 245px;;
     }
-    #container
+    .containerBlock
     {
         width: 248px;
+         height: 248px;
     }
    
 }

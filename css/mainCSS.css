@@ -78,6 +78,7 @@ ol, ul {
 {
     background: #0199B1;
     color: white;
+    border-color: #0199B1;
 }
 .carousel-inner {
 	width: 100%;
@@ -264,11 +265,7 @@ ul#Sponcers li {
 .bottom-right span {
 	color: white;
 }
-.bottom-right:hover
-{
-    background: #0199B1;
-    color: white;
-}
+
 .captiontestimonial {
 	background: url(../images/bannerside.png);
 	padding-left: 50px;
@@ -840,6 +837,7 @@ body {
 {
     background: #0199B1;
     color:white;
+    border-color: #0199B1;
 }
 .thm-border-blue {
 	border-style: solid;
@@ -930,9 +928,7 @@ body {
 .bg-f4f4f4 {
 	background-color: #f4f4f4;
 }
-.hoverEffect:hover{
-    background-color: red;
-}
+
 /*****************Mdian Query********/
 @media only screen and (min-width: 320px) {
     #headerDiv

@@ -1,10 +1,355 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Aug 31, 2016, 3:00:31 PM
-    Author     : Swapnil
-*/
-
+.divHeader {
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.navbar {
+	background-color: transparent;
+	background: transparent;
+	border: 0;
+}
+.navbar li {
+	color: #000
+}
+.relative {
+	position: relative;
+}
+.bg-repeat{
+	background: url(../images/bannerOverlay.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+	height: 100%;
+	background-attachment: fixed;
+}
+.divAboutUS {
+	background-image: url(../images/AboutUS.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 500px;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.divCompitition
+{
+    background-image: url(../images/compitiotin.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: auto;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.divletsGo
+{
+    background-image: url(../images/letsGo.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: auto;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.divquery
+{
+    background-image: url(../images/query.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: auto;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.divSponsors
+{
+    background-image: url(../images/sponsors.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: auto;
+        background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.divfooter {
+	height: auto;
+	background-image: url(../images/footerbg.png);
+	background-repeat: no-repeat;
+	background-position: 0;
+	background-size: cover;
+	color: white;
+	text-align: left
+}
+.divCompititionContent
+{
+    padding-top: 380px;
+    text-align: center;
+}
+.btnApplyNow
+{
+     padding-top: 45px;
+}
+.headerText
+{
+     padding-top: 155px;
+      padding-left: 115px;
+      padding-right: 65px;
+}
+@font-face {
+	font-family: 'Conv_MyriadHebrew-Regular';
+	src: url('../fonts/MyriadHebrew-Regular.eot');
+	src: url('../fonts/MyriadHebrew-Regular.woff') format('woff'), url('../fonts/MyriadHebrew-Regular.ttf') format('ttf'), url('../fonts/MyriadHebrew-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SEGOEUIL';
+	src: url('../fonts/SEGOEUIL.eot');
+	src: url('../fonts/SEGOEUIL.woff') format('woff'), url('../fonts/SEGOEUIL.ttf') format('ttf'), url('../fonts/SEGOEUIL.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('ttf'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'seguibl';
+	src: url('../fonts/seguibl.eot');
+	src: url('../fonts/seguibl.woff') format('woff'), url('../fonts/seguibl.ttf') format('ttf'), url('../fonts/seguibl.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI-Bold';
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: url('../fonts/SegoeUI-Bold.woff') format('woff'), url('../fonts/SegoeUI-Bold.ttf') format('ttf'), url('../fonts/SegoeUI-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TitilliumWeb-Bold';
+	src: url('../fonts/TitilliumWeb-Bold.eot');
+	src: url('../fonts/TitilliumWeb-Bold.woff') format('woff'), url('../fonts/TitilliumWeb-Bold.ttf') format('ttf'), url('../fonts/TitilliumWeb-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.fontTitilliumWeb-Bold {
+	font-family: TitilliumWeb-Bold;
+}
+@font-face {
+	font-family: 'TitilliumWeb-Regular';
+	src: url('../fonts/TitilliumWeb-Regular.eot');
+	src: url('../fonts/TitilliumWeb-Regular.woff') format('woff'), url('../fonts/TitilliumWeb-Regular.ttf') format('ttf'), url('../fonts/TitilliumWeb-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI';
+	src: url('../fonts/SegoeUI.eot');
+	src: url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf') format('ttf'), url('../fonts/SegoeUI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.fontSegoeUI {
+	font-family: SegoeUI;
+}
+.fontTitilliumWeb-Regular {
+	font-family: TitilliumWeb-Regular;
+}
+.fontSegoeUI-Bold {
+	font-family: SegoeUI-Bold;
+}
+.fontseguibl {
+	font-family: seguibl;
+}
+.fontMyriadPro-Regular {
+	font-family: MyriadPro-Regular;
+}
+.fontSEGOEUIL {
+	font-family: SEGOEUIL;
+}
+.fontConv_MyriadHebrew-Regular {
+	font-family: Conv_MyriadHebrew-Regular;
+}
+.font24
+{
+    font-size: 24px;
+}
+.aboutUs
+{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 85px;
+}
+.headerFontSize
+{
+    font-size: 75px;
+}
+.headerFontSize1
+{
+    font-size: 22px;
+}
+.colorWhite
+{
+    color: white;
+}
+.colorRed
+{
+    color: red;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+.btn{
+   border: 1px solid white;
+   background-color: transparent;
+   padding: 4px 12px;
+   -o-transition: background-color .2s ease-in; 
+    -moz-transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in; 
+    transition: background-color .2s ease-in; 
+    width: 130px;
+    height: 40px;
+    font-size: 19px;
+}
+.aboutUsContent
+{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+}
+.letsGoCircleContent
+{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+    padding-bottom: 80px;
+}
+.row {
+     margin-right: 0px; 
+     margin-left: 0px; 
+}
+#aboutUS{
+    border-color: transparent;
+}
+.title
+{
+    font-size: 40px;
+}
+#aboutUSTarget
+{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.btbLetsgo
+{
+    padding-bottom: 35px;
+}
+#aboutUSTarget ul li a
+{
+    padding-left: 42px;
+    padding-right: 42px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+.letsGoCircle
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.letsGoCircle img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.queryHeader
+{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.SponsorsHeader
+{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: black;
+}
+.img-Sponsors {
+	height: auto;
+	width: auto;
+	display: inline;
+	text-align: center;
+}
+.SponsorsImageDiv
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+.btnSponsership
+{
+    border-color: black;
+    width: 380px;
+}
+.btnSponsershipDiv
+{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+.formStyle
+{
+    width: 75%;
+    padding-bottom: 20px;
+    margin:0 auto;
+    text-align:center;
+}
+.btnSubmit
+{
+    text-align:right;
+}
+.btnSubmit input
+{
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+.divfooter
+{
+    color: black;
+    font-size: 15px;
+}
+.footerContent
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

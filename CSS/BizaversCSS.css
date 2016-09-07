@@ -34,7 +34,7 @@
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: auto;
         background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -201,7 +201,7 @@
     font-size: 40px;
     text-align: center;
     padding-top: 35px;
-    padding-bottom: 85px;
+    padding-bottom: 40px;
 }
 .headerFontSize
 {
@@ -249,9 +249,16 @@
     color: black;
     padding-bottom: 80px;
 }
+.AboutUsContent
+{
+     padding-bottom: 40px;
+}
 .row {
      margin-right: 0px; 
      margin-left: 0px; 
+}
+.imgSmall {
+	display: none;
 }
 #aboutUS{
     border-color: transparent;
@@ -352,4 +359,148 @@
 {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+.navbar-collapse
+{
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 transparent;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+/*****************Median Query********/
+@media only screen and (min-width: 320px) 
+{
+    .font24 {
+    font-size: 18px;
+}
+    .headerFontSize {
+    font-size: 36px;
+    }
+    .headerFontSize1
+    {
+    font-size: 11px;
+    }
+    .btnApplyNow 
+    {
+    padding-top: 35px;
+    }
+    .btn
+    {
+        width: 105px;
+        height: 33px;
+        font-size: 14px;
+    }
+    .headerText
+    {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 9px;
+    }
+    .btnSponsershipDiv .btn
+    {
+        width: 220px;
+    }
+    .divHeader
+    {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 360px) {
+    .headerText {
+    padding-top: 130px;
+    padding-left: 35px;
+    padding-right: 25px;
+    }
+    .headerFontSize {
+    font-size: 43px;
+    }
+    .divHeader {
+    height: 75vh;
+}
+}
+@media only screen and (min-width: 768px) {
+    .divHeader
+    {
+        height: 66vh;
+    }
+    .font24 {
+    font-size: 18px;
+    }
+    .headerText {
+    padding-top: 127px;
+    padding-left: 140px;
+    padding-right: 25px;
+}
+.headerFontSize {
+    font-size: 75px;
+}
+.headerFontSize1 {
+    font-size: 24px;
+}
+.btn {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+}
+#aboutUSTarget ul li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.btnSponsershipDiv .btn {
+    width: 340px;
+}
+}
+@media only screen and (min-width: 800px) {
+    .font24 {
+        font-size: 20px;
+    }
+    .bg-repeat {
+        width: 100%;
+    }
+    .divHeader {
+        height: 47vh;
+    }
+    
+}
+@media only screen and (min-width: 980px) {
+    .bg-repeat {
+    width: 65%;
+    }
+    .headerText {
+    padding-top: 140px;
+    padding-left: 85px;
+    padding-right: 25px;
+}
+.headerFontSize {
+    font-size: 72px;
+}
+.headerFontSize1 {
+    font-size: 22px;
+}
+.divHeader {
+    height: 50vh;
+}
+#aboutUSTarget ul li a {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+}
+}
+@media only screen and (min-width: 1280px) {
+    .divHeader {
+    height: 100vh;
+}
+.bg-repeat {
+    width: 50%;
+}
+.font24 {
+    font-size: 24px;
+}
+#aboutUSTarget ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+}
 }

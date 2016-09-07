@@ -14,17 +14,20 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
         <link rel="stylesheet" href="CSS/BizaversCSS.css" >
+        <script src="js/MainJScript.js" type="text/javascript" ></script>
     </head>
 <body>
     <div class="row-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" id="my-navbar">
     <div class="container">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"></button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> </button>
         <div class="pull-left" style="position: absolute; top: 5px; left: 15px;"> 
             <a href="/"> 
         	<img src="images/logo.png" class="imgNormal" alt="Network Story" style="max-height: 45px;" />
-        	<!--<img src="images/logo-small.png" class="imgSmall" alt="Network Story" style="max-height: 45px;" />-->
+                <img src="images/logo-small.png" class="imgSmall" alt="Network Story" style="max-height: 45px;" />
             </a> 
         </div>
       </div>
@@ -55,12 +58,17 @@ and open the template in the editor.
         <div class="col-md-6"></div>
     </div>
     <div class="divAboutUS row-fluid">
-        <div class="aboutUs fontTitilliumWeb-Bold">   <span>About Us</span></div>
+        <div class="aboutUs fontTitilliumWeb-Bold">   
+            <span>About Us</span>
+        </div>
+        <div class="AboutUsContent row">
         <div class="col-md-1"></div>
         <div class="col-md-10 aboutUsContent fontTitilliumWeb-Regular">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sodales risus. Duis non consequat turpis. Donec facilisis augue sit amet purus pellentesque volutpat. Proin molestie justo sit amet libero iaculis maximus. Nam nec erat a tellus ullamcorper ultrices et eget orci. Curabitur tristique dapibus vehicula. Fusce posuere dui ac lacus elementum pulvinar. Proin ac libero nibh. Morbi sed ex purus. Donec nec velit facilisis, porttitor turpis sit amet, semper felis.In hac habitasse platea dictumst. Sed nisl tellus, congue maximus arcu quis, scelerisque ultrices magna. Suspendisse sapien felis, molestie vel ornare quis, tristique eget ante. Aliquam lacinia feugiat metus et elementum. Phasellus vulputate lectus ac consectetur efficitur. Mauris ut arcu efficitur, dapibus arcu semper, efficitur erat. Donec ac gravida magna. In nec erat luctus, cursus risus aliquet, viverra est. Maecenas ultricies rhoncus suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi purus leo, vulputate in volutpat non, faucibus id lorem. Suspendisse potenti. In cursus mauris et enim laoreet elementum. Nam mollis tempor ipsum id lacinia. Sed interdum, felis eu pretium pulvinar, nisl lectus pulvinar ex, non ullamcorper dui enim eu leo.
         </div>
         <div class="col-md-1"></div>
+        </div>
+        <div class='btbLetsgo'></div>
     </div>
     <div class="divCompitition row-fluid">
         <div class="divCompititionContent">
@@ -137,21 +145,31 @@ and open the template in the editor.
         <div class="fontSegoeUI text-center footerContent">  <span>Copyright Intelliber Technologies 2017-2018. All Rights Reserved. </span></div>
     </footer>
     <script type="text/javascript">
-     $(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('.nav');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#my-navbar').css('background-color', '#DCDCDC');
-       } else {
-          $('#my-navbar').css('background-color', 'transparent');
-       }
-   });
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 50)
+		{
+			$('#my-navbar').addClass('scrolled');
+		}
+		else
+		{
+			$('#my-navbar').removeClass('scrolled');
+		}
+		$('.events-content li img').each(function(index, element) {
+			$(this).height($(this).width());
+		});
+	});
+	$(window).resize(function(){
+		$('.events-content li img').each(function(index, element) {
+			$(this).height($(this).width());
+		});
+	});
+	$('.events-content li img').each(function(index, element) {
+        $(this).height($(this).width());
+    });
 });
 </script>
-    <script src="js/jquery.mobile.custom.min.js"></script> 
-    <script src="js/main.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script> 
+<script src="js/main.js"></script>
 </body>
 </html>

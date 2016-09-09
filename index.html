@@ -42,7 +42,7 @@ and open the template in the editor.
     
     </div>
     <div class="divHeader row-fluid">
-        <div class="bg-repeat col-md-6">
+        <div class="bg-repeat col-md-6" id="bg-repeatID">
             <div class="container headerText">
                 <div class="colorWhite"> 
                 <span class="fontMyriadPro-Regular headerFontSize">HAVE YOU</span><br>
@@ -50,8 +50,10 @@ and open the template in the editor.
                   <span class="fontseguibl headerFontSize1 colorRed">WHAT IT TAKES TO BUILD THE NEXT EMPIRE?</span> <br>
                   <span class="fontseguibl headerFontSize1 colorWhite">JOIN INDIA'S BIGGEST B-PLAN COMPETITION</span><br>
                   <div class="btnApplyNow fontSegoeUI-Bold">
-                    <input class="btn" type="button" value="Apply Now"/></div></br>
-                    <input class="btn fontSegoeUI-Bold" type="button" value="Know More"/>
+                      <a href="#myModal" role="button" class="btn colorWhite" data-toggle="modal"  onclick="openModal()">Apply Now</a>
+                    
+                    </div></br>
+                    <a href="#" role="button" class="btn colorWhite fontSegoeUI-Bold" data-toggle="modal">Know More</a>
                 </div>
             </div>
         </div>
@@ -70,10 +72,10 @@ and open the template in the editor.
         </div>
         <div class='btbLetsgo'></div>
     </div>
-    <div class="divCompitition row-fluid">
-        <div class="divCompititionContent">
+    <div class="divCompitition row-fluid" id="menuContainer" >
+        <div class="divCompititionContent" id="divCompititionContentID" >
             <span class="fontTitilliumWeb-Bold title colorWhite">The Competition</span>
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-inverse navbar-static"  >
         <div class="container">
         <div class="navbar-header">
         <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#aboutUSTarget">
@@ -84,7 +86,7 @@ and open the template in the editor.
         </div>
         <div class="collapse navbar-collapse" id='aboutUSTarget'>
           <ul class="nav navbar-nav fontSegoeUI">
-            <li><a href="#">About</a></li>
+              <li><a href="#">About</a></li>
             <li><a href="#">Judges</a></li>
             <li><a href="#">Timeline</a></li> 
             <li><a href="#">Prizes</a></li>
@@ -144,6 +146,58 @@ and open the template in the editor.
     <footer class="divfooter relative">
         <div class="fontSegoeUI text-center footerContent">  <span>Copyright Intelliber Technologies 2017-2018. All Rights Reserved. </span></div>
     </footer>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title fontSegoeUI formHeaderStyle">Please fill out the form below for completing your application:</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="ideaName">Idea Name</label>
+                    <input type="text" class="form-control" id="ideaName">
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="noofMembers">No. of team members</label>
+                    <input type="text" class="form-control" id="noofMembers">
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="ideaDes">Idea Description</label>
+                    <textarea class="form-control" rows="2" id="ideaDes"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="targetProb">Target Problem</label>
+                    <textarea class="form-control" rows="2" id="targetProb"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="solution">Your Solution</label>
+                    <textarea class="form-control" rows="2" id="solution"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="targetAudience">Target Audience</label>
+                    <textarea class="form-control" rows="2" id="targetAudience"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="expectedGrowthRate">Expected Growth Rate</label>
+                    <textarea class="form-control" rows="2" id="expectedGrowthRate"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="directCompetition">Direct Competition</label>
+                    <textarea class="form-control" rows="2" id="directCompetition"> </textarea>
+                </div>
+                <div class="form-group form-inline fontSegoeUI formContentStyle">
+                    <label for="indirectCompetition">Indirect Competition</label>
+                    <textarea class="form-control" rows="2" id="indirectCompetition"> </textarea>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+            
+              <a href="#" role="button" class="btn fontSegoeUI-Bold btnSubmit" data-toggle="modal">Submit</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
     <script type="text/javascript">
 $(document).ready(function(){
 	$(window).scroll(function(){

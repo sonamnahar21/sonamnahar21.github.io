@@ -504,3 +504,67 @@
     font-size: 25px;
 }
 }
+/*********************/
+.menu-padding {
+    padding-top:40px;
+    
+}
+
+.sticky {
+    position:fixed;
+    top:50px;
+    
+    padding: 0;
+   height: 100px;
+   background-image: url(../images/compitiotinLayer.png);
+}
+
+
+/************Form styling************/
+.modal
+{
+    background: none;
+}
+.modal-header
+{
+    border: 0;
+}
+.modal-footer
+{
+    border: 0;
+}
+.modal-body {
+    padding-left: 35px;
+}
+.formContentStyle
+{
+    font-size: 17px;
+}
+label
+{
+    width: 220px;
+    font-weight: 100;
+}
+.form-inline .form-control
+{
+    width: 280px;
+}
+#noofMembers
+{
+    width: 50px;
+}
+.formHeaderStyle
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.formStyle
+{
+    text-align: left;
+}
+.btnSubmit
+{
+    color: black;
+    border-color: black;
+    padding: 4px 42px;
+}

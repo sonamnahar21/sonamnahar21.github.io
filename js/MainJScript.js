@@ -1,8 +1,8 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+$().ready(function(){
+  
+});
+
  $(document).ready(function(){       
    var scroll_start = 0;
    var startchange = $('.nav');
@@ -33,24 +33,62 @@
                                $('#menuContainer').removeClass('sticky');
                                 $('#menuContainer').removeClass('navbar-fixed-top');
                                 document.getElementById('divCompititionContentID').style.paddingTop ='380px';
-                                //document.getElementById('divCompititionContentID').style.padding='380px';
-                                //document.getElementById("divCompititionContentID").style.textAlign = "center";
                                 $('.divletsGo').removeClass('menu-padding');
                                document.getElementById('aboutUSTarget').style.paddingTop='20px';
                                document.getElementById('aboutUSTarget').style.paddingLeft='70px';
                             }
                 });
+                
+                
+     
+             
 });
-   function openModal(){
+
+function openModal(){
        document.getElementById("bg-repeatID").style.display = "none";
 }   
 function closeModal(){
        document.getElementById("bg-repeatID").style.display = "block";
 }   
-$('html').click(function (e) {
-    if (e.target.id == 'modal') {
-        alert("hi");
-    } else {
-       document.getElementById("bg-repeatID").style.display = "block";
-    }
+$(document).on('hide.bs.modal','#myModal', function () {
+    document.getElementById("bg-repeatID").style.display = "block";
 });
+
+function isAlfa(charCode) {
+            if (charCode > 31 && (charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122)) {
+        return false;
+    }
+    return true;
+        }
+function isNumber(evt) 
+{
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+function submitform(){
+    validate();
+} 
+function validate()
+{
+    var ideaName = document.getElementById("ideaName");
+    var noofMembers = document.getElementById("noofMembers");
+    var ideaDes = document.getElementById("ideaDes");
+    var targetProb = document.getElementById("targetProb");
+    var solution = document.getElementById("solution");
+    var targetAudience = document.getElementById("targetAudience");
+    var expectedGrowthRate = document.getElementById("expectedGrowthRate");
+    var directCompetition = document.getElementById("directCompetition");
+    var indirectCompetition = document.getElementById("indirectCompetition");
+    if (noofMembers.value>4) {
+    noofMembers.setCustomValidity("Enter at most 4!!");
+    } 
+    else {
+    noofMembers.setCustomValidity("");
+    }
+    
+    
+}

@@ -405,6 +405,26 @@
     {
         height: 100vh;
     }
+    /******* Form Styling********/
+    label {
+    width: 129px !important;
+    }
+    .formContentStyle {
+    font-size: 13px !important;
+    }
+    .formHeaderStyle {
+    font-size: 13px !important;
+    font-weight: bold;
+    }
+    .form-inline .form-control {
+    width: 245px !important;
+    }
+    #noofMembers {
+    width: 50px !important;
+    }
+    .btnSubmit {
+    padding: 0px 40px !important;
+    }
 }
 @media only screen and (min-width: 360px) {
     .headerText {
@@ -418,6 +438,26 @@
     .divHeader {
     height: 75vh;
 }
+/******* Form Styling********/
+    label {
+    width: 129px !important;
+    }
+    .formContentStyle {
+    font-size: 13px !important;
+    }
+    .formHeaderStyle {
+    font-size: 13px !important;
+    font-weight: bold;
+    }
+    .form-inline .form-control {
+    width: 245px !important;
+    }
+    #noofMembers {
+    width: 50px !important;
+    }
+    .btnSubmit {
+    padding: 0px 40px !important;
+    }
 }
 @media only screen and (min-width: 768px) {
     .divHeader
@@ -431,7 +471,7 @@
     padding-top: 127px;
     padding-left: 140px;
     padding-right: 25px;
-}
+    }
 .headerFontSize {
     font-size: 75px;
 }
@@ -450,6 +490,23 @@
 }
 .btnSponsershipDiv .btn {
     width: 340px;
+}
+
+/********Form styling*********/
+    .formHeaderStyle {
+        font-size: 17px !important;
+    }
+    label {
+        width: 190px !important;
+    }
+    .formContentStyle {
+        font-size: 17px !important;
+    }
+    .form-inline .form-control {
+        width: 280px !important;
+    }
+    .btnSubmit {
+    padding: 0px 30px !important;
 }
 }
 @media only screen and (min-width: 800px) {
@@ -509,7 +566,6 @@
     padding-top:40px;
     
 }
-
 .sticky {
     position:fixed;
     top:50px;
@@ -528,13 +584,28 @@
 .modal-header
 {
     border: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.form-group {
+    margin-bottom: 7px;
 }
 .modal-footer
 {
     border: 0;
 }
 .modal-body {
+    padding: 0;
     padding-left: 35px;
+}
+.form-control{
+    height: 25px;
+}
+textarea.form-control
+{
+    height: 50px;
 }
 .formContentStyle
 {
@@ -566,5 +637,15 @@ label
 {
     color: black;
     border-color: black;
-    padding: 4px 42px;
+    padding: 0px 35px;
+    height: 33px;
+    width: 129px;
+}
+
+.modal-dialog
+{
+    opacity: 0.9;
+}
+.modal-backdrop.in {
+    opacity: 0;
 }

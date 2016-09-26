@@ -13,6 +13,9 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="CSS/BizaversCSS.css" >
         <script src="js/MainJScript.js" type="text/javascript" ></script>
         <script src="js/jquery.validate.js" type="text/javascript"></script>
@@ -74,11 +77,12 @@ and open the template in the editor.
         </div>
         <div class='btbLetsgo'></div>
     </div>
-    <div class="divCompitition row-fluid" id="menuContainer" >
-        <div class="divCompititionContent" id="divCompititionContentID" >
-            <span class="fontTitilliumWeb-Bold title colorWhite">The Competition</span>
-        <div class="navbar navbar-inverse navbar-static"  >
-        <div class="container">
+    
+ <div class="divCompitition row-fluid" id="menuContainer" >
+        <div class="divCompititionContent"  >       
+      <div class="navbar navbar-default " id="mainnav">
+          <span class="fontTitilliumWeb-Bold title colorWhite">The Competition</span>
+        <div class="container-fluid">
         <div class="navbar-header">
         <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#aboutUSTarget">
           <span class="icon-bar"></span>
@@ -86,7 +90,8 @@ and open the template in the editor.
           <span class="icon-bar"></span>
         </button>
         </div>
-        <div class="collapse navbar-collapse" id='aboutUSTarget'>
+        <div class="collapse navbar-collapse text-center" id='aboutUSTarget'>
+            
           <ul class="nav navbar-nav fontSegoeUI">
               <li><a href="#">About</a></li>
             <li><a href="#">Judges</a></li>
@@ -97,7 +102,11 @@ and open the template in the editor.
           </ul>
         </div>
     </div>
-        </div></div></div>
+        </div>
+        
+     
+      
+        </div></div>
     <div class="divletsGo row-fluid">
         <div class="letsGoCircle">
             <img src="images/letsGoCircle.png" class="img-responsive">
@@ -136,15 +145,16 @@ and open the template in the editor.
         <div class="fontTitilliumWeb-Bold SponsorsHeader"><span>Sponsors</span></div>
         <section> 
             <div class="row text-center">
-              <div class="col-md-2 col-md-offset-1 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
-              <div class="col-md-2 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
-              <div class="col-md-2 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
-              <div class="col-md-2 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center "></a></div>
-              <div class="col-md-2 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center "></a></div>
+              <div class="col-md-15 col-sm-3 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
+              <div class="col-md-15 col-sm-3 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
+              <div class="col-md-15 col-sm-3 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center"></a></div>
+              <div class="col-md-15 col-sm-3 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center "></a></div>
+              <div class="col-md-15 col-sm-3 SponsorsImageDiv"><a href="#"><img src="images/sponsorsCircle.png" class="img-Sponsors img-responsive text-center "></a></div>
             </div>
         </section>
         <div class="btnSponsershipDiv"><input class="btn fontSegoeUI btnSponsership" type="button" value="Know more about Sponsorships"/></div>
     </div>
+     
     <footer class="divfooter relative">
         <div class="fontSegoeUI text-center footerContent">  <span>Copyright Intelliber Technologies 2017-2018. All Rights Reserved. </span></div>
     </footer>
@@ -167,8 +177,7 @@ and open the template in the editor.
                 </div>
                 <div class="form-group form-inline fontSegoeUI formContentStyle">
                     <label for="ideaDes">Idea Description</label>
-                    <!--<textarea class="form-control" rows="2" id="ideaDes" required> </textarea>-->
-                     <textarea class="form-control" rows="2" id="ideaDes" name="ideaDes" required></textarea>
+                     <textarea class="form-control" rows="2" id="ideaDes" name="ideaDes" required maxlength="400" placeholder="Maximum 400 Characters"></textarea>
                 </div>
                 <div class="form-group form-inline fontSegoeUI formContentStyle">
                     <label for="targetProb">Target Problem</label>

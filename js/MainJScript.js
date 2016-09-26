@@ -15,7 +15,7 @@ $().ready(function(){
           $('#my-navbar').css('background-color', 'transparent');
        }
    });
-   var offsets = document.getElementById('menuContainer').getBoundingClientRect();
+/*   var offsets = document.getElementById('menuContainer').getBoundingClientRect();
 
         // Get position from top of browser
                 var topoffsets = offsets.top;
@@ -39,9 +39,29 @@ $().ready(function(){
                             }
                 });
                 
-                
-     
-             
+               */ 
+       	
+               var navpos = $('#mainnav').offset();
+	    console.log(navpos.top);
+	    $(window).bind('scroll', function () {
+	        if ($(window).scrollTop() > navpos.top) {
+	            $('#mainnav').addClass('navbar-fixed-top');
+	            $('#topnav').removeClass('navbar-fixed-top');
+                    $('#mainnav').addClass('navbar-fixed-top50');
+	            $('#topnav').removeClass('navbar-fixed-top50');
+                    $('#mainnav').addClass('sticky');
+                    document.getElementById('aboutUSTarget').style.paddingTop='4px';
+                    document.getElementById('aboutUSTarget').style.paddingBottom='4px';
+	        } else {
+	            $('#topnav').addClass('navbar-fixed-top');
+	            $('#mainnav').removeClass('navbar-fixed-top');
+                    $('#topnav').addClass('navbar-fixed-top50');
+	            $('#mainnav').removeClass('navbar-fixed-top50');
+                    $('#mainnav').removeClass('sticky');
+                    document.getElementById('aboutUSTarget').style.paddingTop='20px';
+                    document.getElementById('aboutUSTarget').style.paddingBottom='35px';
+	        }
+	    });
 });
 
 function openModal(){
@@ -64,7 +84,7 @@ function isNumber(evt)
 {
     evt = (evt) ? evt : window.event;
     var charCode = (evt.which) ? evt.which : evt.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    if (charCklode > 31 && (charCode < 48 || charCode > 57)) {
         return false;
     }
     return true;
@@ -72,6 +92,9 @@ function isNumber(evt)
 function submitform(){
     validate();
 } 
+function clearContents(element) {
+  element.value = '';
+}
 function validate()
 {
     var ideaName = document.getElementById("ideaName");

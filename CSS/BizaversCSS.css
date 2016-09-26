@@ -272,6 +272,7 @@
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 35px;
+     padding-left: 150px;
 }
 .btbLetsgo
 {
@@ -281,6 +282,7 @@
 {
     padding-left: 42px;
     padding-right: 42px;
+   
     text-align: center;
     color: white;
     font-weight: lighter;
@@ -486,12 +488,18 @@
 #aboutUSTarget ul li a {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 18px;
+    font-size: 16px;
+}
+.col-sm-3 {
+    width: 20%;
 }
 .btnSponsershipDiv .btn {
     width: 340px;
 }
-
+#aboutUSTarget
+{
+    padding-left: 70px;
+}
 /********Form styling*********/
     .formHeaderStyle {
         font-size: 17px !important;
@@ -542,7 +550,10 @@
 #aboutUSTarget ul li a {
     padding-left: 18px;
     padding-right: 18px;
-    font-size: 20px;
+    font-size: 17px;
+}
+.col-sm-3 {
+    width: 20%;
 }
 }
 @media only screen and (min-width: 1280px) {
@@ -560,21 +571,32 @@
     padding-right: 30px;
     font-size: 25px;
 }
+#aboutUSTarget {
+    padding-left: 132px;
+}
 }
 /*********************/
-.menu-padding {
+/*.menu-padding {
     padding-top:40px;
     
-}
+}*/
 .sticky {
-    position:fixed;
+   /* position:fixed;
     top:50px;
     
     padding: 0;
-   height: 100px;
+   height: 100px;*/
    background-image: url(../images/compitiotinLayer.png);
+   background-repeat: no-repeat;
 }
-
+.navbar-collapse
+{
+    border-top: 0px solid transparent;
+}
+.navbar-default
+{
+    box-shadow: inset 0 0px 0 transparent,0 0px 0px transparent;
+}
 
 /************Form styling************/
 .modal
@@ -644,8 +666,22 @@ label
 
 .modal-dialog
 {
-    opacity: 0.9;
+    opacity: 1;
 }
 .modal-backdrop.in {
     opacity: 0;
+}
+
+
+
+
+/******************************/
+
+.navbar-fixed-top50
+{
+    top:50px;
+}
+.queryContent 
+{
+    padding-bottom: 20px;
 }

@@ -666,14 +666,21 @@ label
 
 .modal-dialog
 {
-    opacity: 1;
+   /*opacity: 1;*/
+   
 }
 .modal-backdrop.in {
     opacity: 0;
 }
-
-
-
+.modal-header .close {
+    margin-top: -13px;
+    margin-right: 5px;
+}
+.blur {
+   
+    opacity: 0.6;
+}
+body { padding-right: 0 !important }
 
 /******************************/
 

@@ -66,12 +66,14 @@ $().ready(function(){
 
 function openModal(){
        document.getElementById("bg-repeatID").style.display = "none";
+       $('#menuHeader').addClass('blur');
 }   
 function closeModal(){
        document.getElementById("bg-repeatID").style.display = "block";
 }   
 $(document).on('hide.bs.modal','#myModal', function () {
     document.getElementById("bg-repeatID").style.display = "block";
+     $('#menuHeader').removeClass('blur');
 });
 
 function isAlfa(charCode) {

@@ -1,0 +1,53 @@
+#my-navbar{
+    background: transparent;
+    box-shadow: inset 0 0px 0 transparent, 0 0px 0px transparent;
+        right: 60px;
+    left: 60px;
+}
+.navbar-inverse {
+    border-color: transparent;
+}
+.colorGray
+{
+    color: gray;
+}
+.lineMenu
+{
+    padding-left: 6px;
+}
+.wrapper {
+    position: relative;
+    width: 1150px;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 10;
+}
+.banner
+{
+    padding-top: 50px;
+    height: 400px;
+}
+.divHowItWorks
+{
+    height: 400px;
+}
+.divWhatwedo
+{
+    height: 400px;
+}
+.divHoldYourDreamApp
+{
+    height: 400px;
+}
+.divFeaturedApps
+{
+    height: 400px;
+}
+.divLetsTalkYourIdeas
+{
+    height: 400px;
+}
+.relative
+{
+    position: relative;
+}
